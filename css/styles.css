@@ -11309,9 +11309,34 @@ span {
 }
 
 .bg-image {
-  background: url("../assets/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0,0.1),rgba(0,0,0,0.9)),url("../assets/header.jpg");
   background-repeat: no-repeat; 
   background-position:center;
   background-size: cover;
-  
 }
+
+.service-bg-img  {
+  background-image: linear-gradient(rgba(0, 0, 0,0.5),rgba(0,0,0,0.6)),url(../assets/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff !important;
+}
+
+.services {
+  margin: 90px auto;
+  text-align: center;
+}
+
+h1{
+  font-family: sans-serif;
+  letter-spacing: 1px;
+}
+
+h1::after {
+  content: '';
+  background: white;
+  display: block;
+  width: 150px;
+  height: 3px;
+  margin: 10px auto;
+} 
